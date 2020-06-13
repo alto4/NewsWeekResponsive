@@ -1,6 +1,9 @@
+/* Main Styles */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -15,16 +18,19 @@ body {
   color: red;
 }
 
+h2 a,
+h3 a {
+  color: inherit;
+}
+
 h3 {
   font-size: 2.3rem;
 }
 
-#feature {
-  padding: 0;
-}
-
+/* Featured Article Styles */
 .main-article {
   position: relative;
+  margin: 0 -15px;
 }
 
 .overlay {
@@ -39,32 +45,7 @@ h3 {
   );
 }
 
-h2 a,
-h3 a {
-  color: inherit;
-}
-.headlines li {
-  list-style: square;
-  list-style-position: inside;
-  color: red;
-  padding: 1.5rem 1rem;
-  border-top: 1px solid #dedede;
-}
-
-.headlines li a {
-  color: #000;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.headlines li:first-of-type {
-  border: none;
-}
-.headlines li:last-of-type {
-  list-style-type: none;
-  border: none;
-}
-
+/* Subfeatures Styles */
 .sub-features {
   padding: 0 1rem;
   border-top: 1px solid #eee;
@@ -102,6 +83,39 @@ h3 a {
   color: #57b1e9;
 }
 
+/* More Headlines Sidebar Styles */
+.side-menu ul {
+  padding: 1.5rem;
+}
+
+.side-menu h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.headlines li {
+  list-style: square;
+  list-style-position: inside;
+  color: red;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #dedede;
+}
+
+.headlines li a {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.headlines li:first-of-type {
+  border: none;
+}
+
+.headlines li:last-of-type {
+  list-style-type: none;
+  border: none;
+}
+
 .btn-more-headlines {
   display: block;
   width: 100%;
@@ -121,15 +135,6 @@ h3 a {
   border: 2px solid #888;
 }
 
-.side-menu ul {
-  padding: 1.5rem;
-}
-
-.side-menu h3 {
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .overlay {
@@ -143,6 +148,7 @@ h3 a {
 
   .sub-article {
     min-height: 630px;
+    border-bottom: 1px solid #ddd;
   }
 }
 
@@ -150,7 +156,6 @@ h3 a {
 @media (max-width: 992px) {
   .sub-article {
     min-height: 550px;
-    border-bottom: 1px solid #ddd;
   }
 
   .sponsor-insight {
